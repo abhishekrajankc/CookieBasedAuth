@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+.auth-field {
+  width: 100%;
+  --mdc-outlined-text-field-container-shape: 0.75rem;
+  --mdc-outlined-text-field-outline-color: rgba(148, 163, 184, 0.35);
+  --mdc-outlined-text-field-hover-outline-color: rgba(103, 232, 249, 0.6);
+  --mdc-outlined-text-field-focus-outline-color: rgba(103, 232, 249, 0.9);
+  --mdc-outlined-text-field-label-text-color: #cbd5e1;
+  --mdc-outlined-text-field-input-text-color: #f8fafc;
+  --mdc-outlined-text-field-caret-color: #67e8f9;
+  --mat-form-field-focus-select-arrow-color: #67e8f9;
+}
+
+.auth-field .mdc-text-field--outlined {
+  background-color: rgba(2, 6, 23, 0.45);
+}
+
+.auth-checkbox {
+  --mdc-checkbox-unselected-icon-color: rgba(148, 163, 184, 0.8);
+  --mdc-checkbox-selected-icon-color: #22d3ee;
+  --mdc-checkbox-selected-checkmark-color: #082f49;
+  --mdc-checkbox-label-text-color: #cbd5e1;
+}
+
+.auth-button {
+  letter-spacing: 0.02em;
+}

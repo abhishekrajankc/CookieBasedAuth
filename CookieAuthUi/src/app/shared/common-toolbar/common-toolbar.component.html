@@ -1,0 +1,30 @@
+<header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/85 backdrop-blur">
+  <div class="flex h-14 w-full items-center justify-between px-4 sm:px-6 lg:px-8">
+    <a routerLink="/dashboard" class="text-sm font-semibold tracking-wide text-slate-100 hover:text-cyan-200">
+      Dashboard
+    </a>
+
+    <button
+      mat-button
+      [matMenuTriggerFor]="profileMenu"
+      class="!min-w-0 !rounded-full !border !border-white/20 !bg-slate-900/70 !px-3 !py-2 !text-slate-100"
+      aria-label="Profile"
+    >
+      <span class="inline-grid h-7 w-7 place-items-center rounded-full bg-cyan-400/25 text-xs font-bold text-cyan-100">
+        {{ initials }}
+      </span>
+    </button>
+
+    <mat-menu #profileMenu="matMenu" class="!p-0">
+      <div class="min-w-64 bg-slate-950/95 px-4 py-3 text-slate-100">
+        <p class="text-[11px] uppercase tracking-[0.16em] text-slate-400">Signed in as</p>
+        <p class="mt-1 text-sm font-semibold text-white">{{ displayName }}</p>
+        <p class="mt-1 text-xs text-slate-300">{{ email || 'N/A' }}</p>
+      </div>
+      <div class="h-px bg-white/10"></div>
+      <button mat-menu-item (click)="logout()" [disabled]="isLoggingOut">
+        {{ isLoggingOut ? 'Logging out...' : 'Logout' }}
+      </button>
+    </mat-menu>
+  </div>
+</header>

@@ -1,0 +1,23 @@
+# =====================
+# .NET API
+# =====================
+CookieAuth.Api/bin/
+CookieAuth.Api/obj/
+CookieAuth.Api/.vs/
+*.user
+*.suo
+*.sln.ide
+
+# =====================
+# Angular frontend
+# =====================
+CookieAuthUi/node_modules/
+CookieAuthUi/dist/
+CookieAuthUi/.angular/
+CookieAuthUi/.vscode/
+CookieAuthUi/.npm-cache/
+
+# =====================
+# Logs
+# =====================
+*.log

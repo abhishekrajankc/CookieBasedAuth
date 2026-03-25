@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\config",
+    "\\src",
+    "\\src\\app\\guards",
+    "\\src\\app\\models",
+    "\\src\\app\\modules",
+    "\\src\\app\\modules\\dashboard",
+    "\\src\\app\\services",
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\common-toolbar"
+  ],
+  "SelectedNode": "\\src\\app",
+  "PreviewInSolutionExplorer": false
+}
